@@ -27,13 +27,15 @@ body {
 }
 header {
   background: #333;
-  color: white;
+  color: #ddd;
   width: 90%;
   margin: 20px auto;
   padding: 15px;
 }
 header h1 {
   text-align: center;
+  font-family: "Hanalei Fill";
+  font-size: 2.9rem;
 }
 table {
   width: 100%;
