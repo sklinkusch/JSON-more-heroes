@@ -33,3 +33,13 @@ table tr:nth-child(even) {
   background-color: #ddd;
   opacity: 0.8;
 }
+footer {
+  background: #333;
+  color: white;
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+}
+footer p {
+  text-align: center;
+}
