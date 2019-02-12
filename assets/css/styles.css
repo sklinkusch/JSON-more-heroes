@@ -16,3 +16,20 @@ header {
 header h1 {
   text-align: center;
 }
+table {
+  width: 100%;
+  max-width: 770px;
+  display: block;
+  margin: 10px auto;
+  border: 2px black solid;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  border: 1px black solid;
+  padding: 2px;
+}
+table tr:nth-child(even) {
+  background-color: #ddd;
+  opacity: 0.8;
+}
