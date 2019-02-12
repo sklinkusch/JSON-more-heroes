@@ -9,5 +9,25 @@ request.send();
 request.onload = function() {
   let HeroesText = request.response;
   let superHeroes = JSON.parse(HeroesText);
-  console.log(superHeroes);
+  showHeroes(superHeroes);
+};
+const showHeroes = heroes => {
+  tableHead =
+    "<table><thead><tr><th>Hero</th><th>Creator</th><th>Alter Ego</th><th>First Appearance</th><th>Characters</th></tr></thead><tbody>";
+  tableContent = heroes
+    .map(hero => {
+      const {
+        superhero,
+        publisher,
+        alter_ego,
+        first_appearance,
+        characters
+      } = hero;
+      const characterArray = characters.split(",");
+      const characterString = characterArray.join("<br>");
+      return `<tr><td>${superhero}</td><td>${publisher}</td><td>${alter_ego}</td><td>${first_appearance}</td><td>${characterString}</td></tr>`;
+    })
+    .join("");
+  tableFoot = "</tbody></table>";
+  container.innerHTML = tableHead + tableContent + tableFoot;
 };
