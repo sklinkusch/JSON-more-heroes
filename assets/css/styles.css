@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background: orange;
+}
+header {
+  background: #333;
+  color: white;
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+}
+header h1 {
+  text-align: center;
+}
